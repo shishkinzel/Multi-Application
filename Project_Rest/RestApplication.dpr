@@ -3,7 +3,7 @@ program RestApplication;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  FRest_some in '..\..\FRest_some.pas' {frmRest};
+  FRest_some in 'FRest_some.pas' {frmRest};
 
 {$R *.res}
 
