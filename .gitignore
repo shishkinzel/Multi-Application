@@ -62,6 +62,10 @@ __history/
 __recovery/
 *.~*
 
+#Исключение папок
+Android/
+Win32/ 
+
 # Castalia statistics file (since XE7 Castalia is distributed with Delphi)
 *.stat
 
