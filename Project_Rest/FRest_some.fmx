@@ -1,7 +1,7 @@
 object frmRest: TfrmRest
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = #1056#1072#1089#1095#1077#1090' '#1074#1088#1077#1084#1077#1085#1080' '
   ClientHeight = 602
   ClientWidth = 512
   FormFactor.Width = 320
@@ -13,7 +13,7 @@ object frmRest: TfrmRest
     Size.Width = 512.000000000000000000
     Size.Height = 502.000000000000000000
     Size.PlatformDefault = False
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 0
     TabPosition = PlatformDefault
     Sizes = (
@@ -25,25 +25,194 @@ object frmRest: TfrmRest
       CustomIcon = <
         item
         end>
-      IsSelected = False
-      Size.Width = 77.000000000000000000
+      IsSelected = True
+      Size.Width = 60.000000000000000000
       Size.Height = 26.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
-      Text = 'tbtmTicket'
+      Text = #1041#1080#1083#1077#1090#1099
+      ExplicitSize.cx = 60.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object lblTitleOne: TLabel
+        StyledSettings = [Style, FontColor]
+        Position.X = 88.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 289.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 18.000000000000000000
+        Text = #1056#1072#1089#1095#1077#1090' '#1074#1088#1077#1084#1077#1085#1080' '#1087#1086#1082#1091#1087#1082#1080' '#1073#1080#1083#1077#1090#1086#1074
+        TabOrder = 3
+      end
+      object lblOut: TLabel
+        StyledSettings = [Style, FontColor]
+        Position.X = 45.000000000000000000
+        Position.Y = 120.000000000000000000
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 18.000000000000000000
+        Text = #1044#1072#1090#1072' '#1086#1090#1098#1077#1079#1076#1072
+        TabOrder = 2
+      end
+      object lbl2: TLabel
+        StyledSettings = [Style, FontColor]
+        Position.X = 45.000000000000000000
+        Position.Y = 180.000000000000000000
+        Size.Width = 289.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 18.000000000000000000
+        Text = #1047#1072' '#1082#1072#1082#1086#1077' '#1082#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1089#1091#1090#1086#1082
+        TabOrder = 1
+      end
+      object btn1: TButton
+        Position.X = 45.000000000000000000
+        Position.Y = 360.000000000000000000
+        TabOrder = 5
+        Text = #1042#1099#1087#1086#1083#1085#1080#1090#1100
+      end
+      object btn2: TButton
+        Position.X = 325.000000000000000000
+        Position.Y = 360.000000000000000000
+        TabOrder = 4
+        Text = #1042#1099#1093#1086#1076
+      end
+      object dtdt1: TDateEdit
+        Date = 44331.000000000000000000
+        Position.X = 325.000000000000000000
+        Position.Y = 120.000000000000000000
+        TabOrder = 7
+      end
+      object dtdt2: TDateEdit
+        Date = 44331.000000000000000000
+        Position.X = 325.000000000000000000
+        Position.Y = 260.000000000000000000
+        TabOrder = 6
+      end
+      object edt1: TComboEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 8
+        ItemHeight = 19.000000000000000000
+        Items.Strings = (
+          '15'
+          '30'
+          '45'
+          '60'
+          '90'
+          '120')
+        ItemIndex = 0
+        Text = '15'
+        Position.X = 325.000000000000000000
+        Position.Y = 180.000000000000000000
+      end
+      object lbl4: TLabel
+        StyledSettings = [Style, FontColor]
+        Position.X = 45.000000000000000000
+        Position.Y = 260.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 18.000000000000000000
+        Text = #1044#1072#1090#1072' '#1087#1086#1082#1091#1087#1082#1080
+        TabOrder = 0
+      end
     end
     object tbtmHotell: TTabItem
       CustomIcon = <
         item
         end>
-      IsSelected = True
-      Size.Width = 78.000000000000000000
+      IsSelected = False
+      Size.Width = 81.000000000000000000
       Size.Height = 26.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
-      Text = 'tbtmHotell'
+      Text = #1043#1086#1089#1090#1080#1085#1080#1094#1072' '
+      ExplicitSize.cx = 81.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object DateEdit1: TDateEdit
+        Date = 44331.000000000000000000
+        Position.X = 333.000000000000000000
+        Position.Y = 128.000000000000000000
+        TabOrder = 7
+      end
+      object ComboEdit1: TComboEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 8
+        ItemHeight = 19.000000000000000000
+        Items.Strings = (
+          '1')
+        ItemIndex = 0
+        Text = '1'
+        Position.X = 333.000000000000000000
+        Position.Y = 188.000000000000000000
+      end
+      object DateEdit2: TDateEdit
+        Date = 44331.000000000000000000
+        Position.X = 333.000000000000000000
+        Position.Y = 268.000000000000000000
+        TabOrder = 6
+      end
+      object Button1: TButton
+        Position.X = 333.000000000000000000
+        Position.Y = 368.000000000000000000
+        TabOrder = 4
+        Text = #1042#1099#1093#1086#1076
+      end
+      object Button2: TButton
+        Position.X = 53.000000000000000000
+        Position.Y = 368.000000000000000000
+        TabOrder = 5
+        Text = #1042#1099#1087#1086#1083#1085#1080#1090#1100
+      end
+      object Label1: TLabel
+        StyledSettings = [Style, FontColor]
+        Position.X = 53.000000000000000000
+        Position.Y = 268.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 18.000000000000000000
+        Text = #1044#1072#1090#1072' '#1074#1099#1077#1079#1076#1072
+        TabOrder = 0
+      end
+      object Label2: TLabel
+        StyledSettings = [Style, FontColor]
+        Position.X = 53.000000000000000000
+        Position.Y = 188.000000000000000000
+        Size.Width = 289.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 18.000000000000000000
+        Text = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1085#1086#1095#1077#1081
+        TabOrder = 1
+      end
+      object Label3: TLabel
+        StyledSettings = [Style, FontColor]
+        Position.X = 53.000000000000000000
+        Position.Y = 128.000000000000000000
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 18.000000000000000000
+        Text = #1044#1072#1090#1072' '#1079#1072#1077#1079#1076#1072
+        TabOrder = 2
+      end
+      object Label4: TLabel
+        StyledSettings = [Style, FontColor]
+        Position.X = 104.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 18.000000000000000000
+        Text = #1056#1072#1089#1095#1077#1090' '#1074#1088#1077#1084#1077#1085#1080' '#1087#1088#1086#1078#1080#1074#1072#1085#1080#1103
+        TabOrder = 3
+      end
     end
   end
   object tlbUp: TToolBar
