@@ -36,6 +36,8 @@ type
     btnMenu: TSpeedButton;
     btnClose: TSpeedButton;
     actlst1: TActionList;
+    btnInfo: TSpeedButton;
+    btnNext: TSpeedButton;
     procedure FormCreate(Sender: TObject);
     procedure edt1Change(Sender: TObject);
     procedure dtdt1Change(Sender: TObject);

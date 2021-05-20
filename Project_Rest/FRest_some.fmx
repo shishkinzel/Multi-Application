@@ -3,7 +3,7 @@ object frmRest: TfrmRest
   Top = 0
   Caption = #1056#1072#1089#1095#1077#1090' '#1074#1088#1077#1084#1077#1085#1080' '
   ClientHeight = 602
-  ClientWidth = 340
+  ClientWidth = 350
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -11,7 +11,7 @@ object frmRest: TfrmRest
   DesignerMasterStyle = 3
   object tbcRest: TTabControl
     Align = Client
-    Size.Width = 340.000000000000000000
+    Size.Width = 350.000000000000000000
     Size.Height = 506.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
@@ -19,16 +19,16 @@ object frmRest: TfrmRest
     TabOrder = 0
     TabPosition = PlatformDefault
     Sizes = (
-      340s
+      350s
       457s
-      340s
+      350s
       457s)
     object tbtmTicket: TTabItem
       CustomIcon = <
         item
         end>
       IsSelected = False
-      Size.Width = 170.000000000000000000
+      Size.Width = 175.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
@@ -143,7 +143,7 @@ object frmRest: TfrmRest
         item
         end>
       IsSelected = True
-      Size.Width = 170.000000000000000000
+      Size.Width = 175.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
@@ -247,30 +247,48 @@ object frmRest: TfrmRest
     end
   end
   object tlbUp: TToolBar
-    Size.Width = 340.000000000000000000
+    Size.Width = 350.000000000000000000
     Size.Height = 48.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
     object btnMenu: TSpeedButton
-      Size.Width = 80.000000000000000000
+      Align = Left
+      Size.Width = 48.000000000000000000
       Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
+      StyleLookup = 'drawertoolbutton'
     end
     object btnClose: TSpeedButton
-      Position.X = 432.000000000000000000
-      Position.Y = 1.000000000000000000
-      Size.Width = 80.000000000000000000
+      Align = Right
+      Position.X = 302.000000000000000000
+      Size.Width = 48.000000000000000000
       Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
+      StyleLookup = 'deletetoolbutton'
     end
   end
   object tlbDown: TToolBar
     Align = Bottom
     Position.Y = 554.000000000000000000
-    Size.Width = 340.000000000000000000
+    Size.Width = 350.000000000000000000
     Size.Height = 48.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
+    object btnInfo: TSpeedButton
+      Align = Left
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'infotoolbutton'
+    end
+    object btnNext: TSpeedButton
+      Align = Right
+      Position.X = 302.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'nexttoolbutton'
+    end
   end
   object actlst1: TActionList
     Left = 72
