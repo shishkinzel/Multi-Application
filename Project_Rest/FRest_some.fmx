@@ -15,7 +15,7 @@ object frmRest: TfrmRest
     Size.Height = 506.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 0
     TabPosition = PlatformDefault
     Sizes = (
@@ -27,7 +27,7 @@ object frmRest: TfrmRest
       CustomIcon = <
         item
         end>
-      IsSelected = False
+      IsSelected = True
       Size.Width = 175.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
@@ -85,6 +85,9 @@ object frmRest: TfrmRest
         OnClick = edt1Change
       end
       object btn2: TButton
+        Action = wndwclsOne
+        Enabled = True
+        ImageIndex = -1
         Position.X = 210.000000000000000000
         Position.Y = 360.000000000000000000
         Size.Width = 120.000000000000000000
@@ -92,7 +95,6 @@ object frmRest: TfrmRest
         Size.PlatformDefault = False
         TabOrder = 4
         Text = #1042#1099#1093#1086#1076
-        OnClick = btn2Click
       end
       object dtdt1: TDateEdit
         Date = 44331.000000000000000000
@@ -142,7 +144,7 @@ object frmRest: TfrmRest
       CustomIcon = <
         item
         end>
-      IsSelected = True
+      IsSelected = False
       Size.Width = 175.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
@@ -167,6 +169,9 @@ object frmRest: TfrmRest
         TabOrder = 6
       end
       object Button1: TButton
+        Action = wndwclsOne
+        Enabled = True
+        ImageIndex = -1
         Position.X = 210.000000000000000000
         Position.Y = 368.000000000000000000
         Size.Width = 120.000000000000000000
@@ -174,9 +179,9 @@ object frmRest: TfrmRest
         Size.PlatformDefault = False
         TabOrder = 4
         Text = #1042#1099#1093#1086#1076
-        OnClick = btn2Click
       end
       object Button2: TButton
+        Hint = 'Close Window|Close active form'
         Position.X = 15.000000000000000000
         Position.Y = 368.000000000000000000
         Size.Width = 120.000000000000000000
@@ -184,7 +189,6 @@ object frmRest: TfrmRest
         Size.PlatformDefault = False
         TabOrder = 5
         Text = #1042#1099#1087#1086#1083#1085#1080#1090#1100
-        OnClick = Button2Click
       end
       object Label1: TLabel
         StyledSettings = [Style, FontColor]
@@ -259,12 +263,16 @@ object frmRest: TfrmRest
       StyleLookup = 'drawertoolbutton'
     end
     object btnClose: TSpeedButton
+      Action = wndwclsOne
       Align = Right
-      Position.X = 302.000000000000000000
-      Size.Width = 48.000000000000000000
-      Size.Height = 48.000000000000000000
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 318.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 32.000000000000000000
+      Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
-      StyleLookup = 'deletetoolbutton'
+      StyleLookup = 'cleareditbutton'
     end
   end
   object tlbDown: TToolBar
@@ -282,16 +290,43 @@ object frmRest: TfrmRest
       StyleLookup = 'infotoolbutton'
     end
     object btnNext: TSpeedButton
+      Action = actNext
       Align = Right
+      Enabled = True
+      ImageIndex = -1
       Position.X = 302.000000000000000000
       Size.Width = 48.000000000000000000
       Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'nexttoolbutton'
     end
+    object btnPrev: TSpeedButton
+      Action = actBack
+      Align = Right
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 254.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'priortoolbutton'
+    end
   end
   object actlst1: TActionList
     Left = 72
     Top = 514
+    object wndwclsOne: TWindowClose
+      Category = 'Window'
+      Hint = 'Close Window|Close active form'
+      OnCanActionExec = wndwclsOneCanActionExec
+    end
+    object actNext: TNextTabAction
+      Category = 'Tab'
+      TabControl = tbcRest
+    end
+    object actBack: TPreviousTabAction
+      Category = 'Tab'
+      TabControl = tbcRest
+    end
   end
 end

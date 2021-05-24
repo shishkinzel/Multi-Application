@@ -6,7 +6,8 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Controls.Presentation,
   FMX.StdCtrls, FMX.TabControl, FMX.Edit, FMX.ComboEdit, FMX.DateTimeCtrls,
-  FMX.EditBox, FMX.NumberBox, FMX.SpinBox, System.Actions, FMX.ActnList;
+  FMX.EditBox, FMX.NumberBox, FMX.SpinBox, System.Actions, FMX.ActnList,
+  FMX.StdActns;
 
 type
   TfrmRest = class(TForm)
@@ -38,11 +39,16 @@ type
     actlst1: TActionList;
     btnInfo: TSpeedButton;
     btnNext: TSpeedButton;
+    wndwclsOne: TWindowClose;
+    btnPrev: TSpeedButton;
+    actNext: TNextTabAction;
+    actBack: TPreviousTabAction;
     procedure FormCreate(Sender: TObject);
     procedure edt1Change(Sender: TObject);
     procedure dtdt1Change(Sender: TObject);
     procedure Button2Click(Sender: TObject);
-    procedure btn2Click(Sender: TObject);
+    procedure wndwclsOneCanActionExec(Sender: TCustomAction;
+      var CanExec: Boolean);
   private
     { Private declarations }
     fday : Integer;
@@ -57,11 +63,6 @@ var
 implementation
 
 {$R *.fmx}
-
-procedure TfrmRest.btn2Click(Sender: TObject);
-begin
-frmRest.Close;
-end;
 
 procedure TfrmRest.Button2Click(Sender: TObject);
 begin
@@ -89,6 +90,12 @@ var
 begin
   dtdt1.Date := Now;
   dtdt3.Date := Now;
+end;
+
+procedure TfrmRest.wndwclsOneCanActionExec(Sender: TCustomAction;
+  var CanExec: Boolean);
+begin
+frmRest.Close;
 end;
 
 end.
