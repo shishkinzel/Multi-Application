@@ -8,14 +8,14 @@ object frmRest: TfrmRest
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   OnCreate = FormCreate
-  DesignerMasterStyle = 3
+  DesignerMasterStyle = 0
   object tbcRest: TTabControl
     Align = Client
     Size.Width = 350.000000000000000000
     Size.Height = 506.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
-    TabIndex = 0
+    TabIndex = 1
     TabOrder = 0
     TabPosition = PlatformDefault
     Sizes = (
@@ -27,8 +27,10 @@ object frmRest: TfrmRest
       CustomIcon = <
         item
         end>
-      IsSelected = True
-      Size.Width = 175.000000000000000000
+      TextSettings.Font.Size = 18.000000000000000000
+      StyledSettings = [Family, Style, FontColor]
+      IsSelected = False
+      Size.Width = 174.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
@@ -75,6 +77,7 @@ object frmRest: TfrmRest
         TabOrder = 1
       end
       object btn1: TButton
+        StyledSettings = [Family, Style, FontColor]
         Position.X = 15.000000000000000000
         Position.Y = 360.000000000000000000
         Size.Width = 120.000000000000000000
@@ -82,11 +85,13 @@ object frmRest: TfrmRest
         Size.PlatformDefault = False
         TabOrder = 5
         Text = #1042#1099#1087#1086#1083#1085#1080#1090#1100
+        TextSettings.Font.Size = 18.000000000000000000
         OnClick = edt1Change
       end
       object btn2: TButton
         Action = wndwclsOne
         Enabled = True
+        StyledSettings = [Family, Style, FontColor]
         ImageIndex = -1
         Position.X = 210.000000000000000000
         Position.Y = 360.000000000000000000
@@ -95,19 +100,30 @@ object frmRest: TfrmRest
         Size.PlatformDefault = False
         TabOrder = 4
         Text = #1042#1099#1093#1086#1076
+        TextSettings.Font.Size = 18.000000000000000000
       end
       object dtdt1: TDateEdit
         Date = 44331.000000000000000000
         OnChange = dtdt1Change
         Position.X = 210.000000000000000000
         Position.Y = 120.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
         TabOrder = 7
+        TextSettings.Font.Size = 18.000000000000000000
       end
       object dtdt2: TDateEdit
         Date = 44331.000000000000000000
         Position.X = 210.000000000000000000
         Position.Y = 260.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
         TabOrder = 6
+        TextSettings.Font.Size = 18.000000000000000000
       end
       object edt1: TComboEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -122,8 +138,13 @@ object frmRest: TfrmRest
           '120')
         ItemIndex = 0
         Text = '15'
+        TextSettings.Font.Size = 18.000000000000000000
         Position.X = 210.000000000000000000
         Position.Y = 180.000000000000000000
+        StyledSettings = [Family, Style, FontColor]
+        Size.Width = 120.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
         OnChange = edt1Change
       end
       object lbl4: TLabel
@@ -144,8 +165,10 @@ object frmRest: TfrmRest
       CustomIcon = <
         item
         end>
-      IsSelected = False
-      Size.Width = 175.000000000000000000
+      TextSettings.Font.Size = 18.000000000000000000
+      StyledSettings = [Family, Style, FontColor]
+      IsSelected = True
+      Size.Width = 174.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
@@ -157,20 +180,28 @@ object frmRest: TfrmRest
         Date = 44331.000000000000000000
         Position.X = 210.000000000000000000
         Position.Y = 128.000000000000000000
-        Size.Width = 100.000000000000000000
-        Size.Height = 32.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 35.000000000000000000
         Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
         TabOrder = 7
+        TextSettings.Font.Size = 18.000000000000000000
       end
       object dtdt4: TDateEdit
         Date = 44331.000000000000000000
         Position.X = 210.000000000000000000
         Position.Y = 268.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
         TabOrder = 6
+        TextSettings.Font.Size = 18.000000000000000000
       end
       object Button1: TButton
         Action = wndwclsOne
         Enabled = True
+        StyledSettings = [Family, Style, FontColor]
         ImageIndex = -1
         Position.X = 210.000000000000000000
         Position.Y = 368.000000000000000000
@@ -179,8 +210,10 @@ object frmRest: TfrmRest
         Size.PlatformDefault = False
         TabOrder = 4
         Text = #1042#1099#1093#1086#1076
+        TextSettings.Font.Size = 18.000000000000000000
       end
       object Button2: TButton
+        StyledSettings = [Family, Style, FontColor]
         Hint = 'Close Window|Close active form'
         Position.X = 15.000000000000000000
         Position.Y = 368.000000000000000000
@@ -189,6 +222,8 @@ object frmRest: TfrmRest
         Size.PlatformDefault = False
         TabOrder = 5
         Text = #1042#1099#1087#1086#1083#1085#1080#1090#1100
+        TextSettings.Font.Size = 18.000000000000000000
+        OnClick = Button2Click
       end
       object Label1: TLabel
         StyledSettings = [Style, FontColor]
@@ -247,6 +282,11 @@ object frmRest: TfrmRest
         Value = 1.000000000000000000
         Position.X = 210.000000000000000000
         Position.Y = 190.000000000000000000
+        TextSettings.Font.Size = 18.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
       end
     end
   end
@@ -261,6 +301,7 @@ object frmRest: TfrmRest
       Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'drawertoolbutton'
+      Text = 'actPopMenu'
     end
     object btnClose: TSpeedButton
       Action = wndwclsOne
@@ -268,11 +309,22 @@ object frmRest: TfrmRest
       Enabled = True
       ImageIndex = -1
       Position.X = 318.000000000000000000
-      Position.Y = 9.000000000000000000
       Size.Width = 32.000000000000000000
-      Size.Height = 30.000000000000000000
+      Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'cleareditbutton'
+    end
+    object lblTitle: TLabel
+      Align = Center
+      StyledSettings = [Style, FontColor]
+      Size.Width = 225.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Tahoma'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = #1055#1088#1080#1083#1086#1078#1077#1085#1080#1077' "'#1054#1090#1087#1091#1089#1082'"'
+      TabOrder = 0
     end
   end
   object tlbDown: TToolBar

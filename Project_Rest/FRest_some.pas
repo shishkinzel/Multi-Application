@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Controls.Presentation,
   FMX.StdCtrls, FMX.TabControl, FMX.Edit, FMX.ComboEdit, FMX.DateTimeCtrls,
   FMX.EditBox, FMX.NumberBox, FMX.SpinBox, System.Actions, FMX.ActnList,
-  FMX.StdActns;
+  FMX.StdActns, FMX.Colors, FMX.Ani, FMX.ExtCtrls, FMX.Menus;
 
 type
   TfrmRest = class(TForm)
@@ -43,6 +43,7 @@ type
     btnPrev: TSpeedButton;
     actNext: TNextTabAction;
     actBack: TPreviousTabAction;
+    lblTitle: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure edt1Change(Sender: TObject);
     procedure dtdt1Change(Sender: TObject);
