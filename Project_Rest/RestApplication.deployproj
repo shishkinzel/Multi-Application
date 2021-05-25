@@ -46,24 +46,6 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="G:\Скаченое с инета\Иконки\png\Солнце\Солнце_36.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>RestApplication\res\drawable-ldpi\</RemoteDir>
-            <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon36</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="G:\Скаченое с инета\Иконки\png\Солнце\Солнце_72.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>RestApplication\res\drawable-hdpi\</RemoteDir>
-            <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon72</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>RestApplication\res\drawable-large\</RemoteDir>
             <RemoteName>splash_image.png</RemoteName>
@@ -100,15 +82,6 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="G:\Скаченое с инета\Иконки\png\Солнце\Солнце_48.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>RestApplication\res\drawable-mdpi\</RemoteDir>
-            <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon48</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Debug'">
             <RemoteDir>RestApplication\library\lib\mips\</RemoteDir>
             <RemoteName>libRestApplication.so</RemoteName>
@@ -118,19 +91,19 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>RestApplication\classes\</RemoteDir>
-            <RemoteName>classes.dex</RemoteName>
-            <DeployClass>AndroidClassesDexFile</DeployClass>
+        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>RestApplication\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>gdbserver</RemoteName>
+            <DeployClass>AndroidGDBServer</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>RestApplication\library\lib\armeabi-v7a\</RemoteDir>
-            <RemoteName>gdbserver</RemoteName>
-            <DeployClass>AndroidGDBServer</DeployClass>
+        <DeployFile Include="Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>RestApplication\classes\</RemoteDir>
+            <RemoteName>classes.dex</RemoteName>
+            <DeployClass>AndroidClassesDexFile</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -154,6 +127,33 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="G:\Скаченое с инета\Иконки\png\Солнце\Солнце_36.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>RestApplication\res\drawable-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="G:\Скаченое с инета\Иконки\png\Солнце\Солнце_72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>RestApplication\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="G:\Скаченое с инета\Иконки\png\Солнце\Солнце_48.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>RestApplication\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="Android\Debug\libRestApplication.so" Condition="'$(Config)'=='Debug'">
             <RemoteDir>RestApplication\library\lib\armeabi-v7a\</RemoteDir>
             <RemoteName>libRestApplication.so</RemoteName>
@@ -163,6 +163,15 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
             <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="G:\Скаченое с инета\Иконки\png\Солнце\Солнце_96.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>RestApplication\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_NotificationIcon_96x96.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>RestApplication\res\drawable-xxxhdpi\</RemoteDir>
@@ -177,15 +186,6 @@
             <RemoteDir>RestApplication\</RemoteDir>
             <RemoteName>AndroidManifest.xml</RemoteName>
             <DeployClass>ProjectAndroidManifest</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="G:\Скаченое с инета\Иконки\png\Солнце\Солнце_144.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>RestApplication\res\drawable-xxhdpi\</RemoteDir>
-            <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon144</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -218,19 +218,19 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Android\Debug\colors.xml" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>RestApplication\res\values\</RemoteDir>
-            <RemoteName>colors.xml</RemoteName>
-            <DeployClass>Android_Colors</DeployClass>
+        <DeployFile Include="G:\Скаченое с инета\Иконки\png\Солнце\Солнце_144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>RestApplication\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="G:\Скаченое с инета\Иконки\png\Солнце\Солнце_96.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>RestApplication\res\drawable-xhdpi\</RemoteDir>
-            <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon96</DeployClass>
+        <DeployFile Include="Android\Debug\colors.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>RestApplication\res\values\</RemoteDir>
+            <RemoteName>colors.xml</RemoteName>
+            <DeployClass>Android_Colors</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
