@@ -38,14 +38,6 @@ object frmRest: TfrmRest
       Text = #1041#1080#1083#1077#1090#1099
       ExplicitSize.cx = 60.000000000000000000
       ExplicitSize.cy = 26.000000000000000000
-      object clrbx1: TColorBox
-        Align = Client
-        Color = claSteelblue
-        Size.Width = 350.000000000000000000
-        Size.Height = 457.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 9
-      end
       object lblTitleOne: TLabel
         StyledSettings = [Style, FontColor]
         Position.X = 24.000000000000000000
@@ -184,14 +176,6 @@ object frmRest: TfrmRest
       Text = #1043#1086#1089#1090#1080#1085#1080#1094#1072' '
       ExplicitSize.cx = 81.000000000000000000
       ExplicitSize.cy = 26.000000000000000000
-      object clrbx2: TColorBox
-        Align = Client
-        Color = claMediumslateblue
-        Size.Width = 350.000000000000000000
-        Size.Height = 457.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 9
-      end
       object dtdt3: TDateEdit
         Date = 44331.000000000000000000
         Position.X = 210.000000000000000000
@@ -311,44 +295,36 @@ object frmRest: TfrmRest
     Size.Height = 48.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
-    object clrbx4: TColorBox
-      Align = Client
-      Color = claYellow
-      Size.Width = 350.000000000000000000
+    object btnClose: TSpeedButton
+      Action = wndwclsOne
+      Align = Right
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 318.000000000000000000
+      Size.Width = 32.000000000000000000
       Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 0
-      object lblTitle: TLabel
-        Align = Center
-        StyledSettings = [Style, FontColor]
-        Size.Width = 225.000000000000000000
-        Size.Height = 23.000000000000000000
-        Size.PlatformDefault = False
-        TextSettings.Font.Family = 'Tahoma'
-        TextSettings.Font.Size = 20.000000000000000000
-        TextSettings.HorzAlign = Center
-        Text = #1055#1088#1080#1083#1086#1078#1077#1085#1080#1077' "'#1054#1090#1087#1091#1089#1082'"'
-        TabOrder = 0
-      end
-      object btnMenu: TSpeedButton
-        Align = Left
-        Size.Width = 48.000000000000000000
-        Size.Height = 48.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = 'drawertoolbutton'
-        Text = 'actPopMenu'
-      end
-      object btnClose: TSpeedButton
-        Action = wndwclsOne
-        Align = Right
-        Enabled = True
-        ImageIndex = -1
-        Position.X = 318.000000000000000000
-        Size.Width = 32.000000000000000000
-        Size.Height = 48.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = 'cleareditbutton'
-      end
+      StyleLookup = 'cleareditbutton'
+    end
+    object btnMenu: TSpeedButton
+      Align = Left
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'drawertoolbutton'
+      Text = 'actPopMenu'
+    end
+    object lblTitle: TLabel
+      Align = Center
+      StyledSettings = [Style, FontColor]
+      Size.Width = 225.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Tahoma'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = #1055#1088#1080#1083#1086#1078#1077#1085#1080#1077' "'#1054#1090#1087#1091#1089#1082'"'
+      TabOrder = 3
     end
   end
   object tlbDown: TToolBar
@@ -358,45 +334,37 @@ object frmRest: TfrmRest
     Size.Height = 48.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    object clrbx3: TColorBox
-      Align = Client
-      Color = claWheat
-      Size.Width = 350.000000000000000000
+    object btnPrev: TSpeedButton
+      Action = actBack
+      Align = Right
+      Enabled = True
+      ImageIndex = -1
+      Opacity = 0.500000000000000000
+      Position.X = 302.000000000000000000
+      Size.Width = 48.000000000000000000
       Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 0
-      object btnPrev: TSpeedButton
-        Action = actBack
-        Align = Right
-        Enabled = True
-        ImageIndex = -1
-        Opacity = 0.500000000000000000
-        Position.X = 254.000000000000000000
-        Size.Width = 48.000000000000000000
-        Size.Height = 48.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = 'priortoolbutton'
-      end
-      object btnNext: TSpeedButton
-        Action = actNext
-        Align = Right
-        Enabled = True
-        ImageIndex = -1
-        Opacity = 0.500000000000000000
-        Position.X = 302.000000000000000000
-        Size.Width = 48.000000000000000000
-        Size.Height = 48.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = 'nexttoolbutton'
-      end
-      object btnInfo: TSpeedButton
-        Align = Left
-        Opacity = 0.500000000000000000
-        Size.Width = 48.000000000000000000
-        Size.Height = 48.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = 'infotoolbutton'
-      end
+      StyleLookup = 'priortoolbutton'
+    end
+    object btnInfo: TSpeedButton
+      Align = Left
+      Opacity = 0.500000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'infotoolbutton'
+    end
+    object btnNext: TSpeedButton
+      Action = actNext
+      Align = Right
+      Enabled = True
+      ImageIndex = -1
+      Opacity = 0.500000000000000000
+      Position.X = 254.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'nexttoolbutton'
     end
   end
   object actlst1: TActionList

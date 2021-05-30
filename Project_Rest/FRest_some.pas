@@ -44,10 +44,6 @@ type
     actNext: TNextTabAction;
     actBack: TPreviousTabAction;
     lblTitle: TLabel;
-    clrbx1: TColorBox;
-    clrbx2: TColorBox;
-    clrbx3: TColorBox;
-    clrbx4: TColorBox;
     procedure FormCreate(Sender: TObject);
     procedure edt1Change(Sender: TObject);
     procedure dtdt1Change(Sender: TObject);
