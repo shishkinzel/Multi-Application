@@ -8,7 +8,7 @@ object frmRest: TfrmRest
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   OnCreate = FormCreate
-  DesignerMasterStyle = 0
+  DesignerMasterStyle = 3
   object tbcRest: TTabControl
     Align = Client
     Size.Width = 350.000000000000000000
@@ -30,7 +30,7 @@ object frmRest: TfrmRest
       TextSettings.Font.Size = 18.000000000000000000
       StyledSettings = [Family, Style, FontColor]
       IsSelected = False
-      Size.Width = 82.000000000000000000
+      Size.Width = 175.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
@@ -108,7 +108,7 @@ object frmRest: TfrmRest
         Position.X = 210.000000000000000000
         Position.Y = 120.000000000000000000
         Size.Width = 120.000000000000000000
-        Size.Height = 35.000000000000000000
+        Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
         StyledSettings = [Family, Style, FontColor]
         TabOrder = 7
@@ -119,7 +119,7 @@ object frmRest: TfrmRest
         Position.X = 210.000000000000000000
         Position.Y = 260.000000000000000000
         Size.Width = 120.000000000000000000
-        Size.Height = 35.000000000000000000
+        Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
         StyledSettings = [Family, Style, FontColor]
         TabOrder = 6
@@ -143,7 +143,7 @@ object frmRest: TfrmRest
         Position.Y = 180.000000000000000000
         StyledSettings = [Family, Style, FontColor]
         Size.Width = 120.000000000000000000
-        Size.Height = 35.000000000000000000
+        Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
         OnChange = edt1Change
       end
@@ -168,7 +168,7 @@ object frmRest: TfrmRest
       TextSettings.Font.Size = 18.000000000000000000
       StyledSettings = [Family, Style, FontColor]
       IsSelected = True
-      Size.Width = 113.000000000000000000
+      Size.Width = 175.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
@@ -181,7 +181,7 @@ object frmRest: TfrmRest
         Position.X = 210.000000000000000000
         Position.Y = 128.000000000000000000
         Size.Width = 120.000000000000000000
-        Size.Height = 35.000000000000000000
+        Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
         StyledSettings = [Family, Style, FontColor]
         TabOrder = 7
@@ -284,7 +284,7 @@ object frmRest: TfrmRest
         Position.Y = 190.000000000000000000
         TextSettings.Font.Size = 18.000000000000000000
         Size.Width = 120.000000000000000000
-        Size.Height = 35.000000000000000000
+        Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
         StyledSettings = [Family, Style, FontColor]
       end
@@ -301,8 +301,9 @@ object frmRest: TfrmRest
       Enabled = True
       ImageIndex = -1
       Position.X = 318.000000000000000000
+      Position.Y = 9.000000000000000000
       Size.Width = 32.000000000000000000
-      Size.Height = 48.000000000000000000
+      Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'cleareditbutton'
     end

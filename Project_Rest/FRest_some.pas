@@ -64,6 +64,7 @@ var
 implementation
 
 {$R *.fmx}
+{$R *.LgXhdpiPh.fmx ANDROID}
 
 procedure TfrmRest.Button2Click(Sender: TObject);
 begin
