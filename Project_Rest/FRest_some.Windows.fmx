@@ -1,0 +1,20 @@
+inherited frmRest_Windows: TfrmRest_Windows
+  DesignerMasterStyle = 0
+  inherited tbcRest: TTabControl
+    Sizes = (
+      350s
+      457s
+      350s
+      457s)
+    inherited tbtmTicket: TTabItem
+      Size.Width = 82.000000000000000000
+      ExplicitSize.cx = 60.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+    inherited tbtmHotell: TTabItem
+      Size.Width = 113.000000000000000000
+      ExplicitSize.cx = 81.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+  end
+end
