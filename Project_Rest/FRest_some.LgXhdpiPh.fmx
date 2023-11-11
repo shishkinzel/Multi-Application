@@ -28,6 +28,8 @@ inherited frmRest_LgXhdpiPh: TfrmRest_LgXhdpiPh
     Size.Width = 450.000000000000000000
     inherited btnClose: TSpeedButton
       Position.X = 418.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Height = 30.000000000000000000
     end
   end
   inherited tlbDown: TToolBar

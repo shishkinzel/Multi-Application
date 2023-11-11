@@ -8,7 +8,7 @@ object frmRest: TfrmRest
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   OnCreate = FormCreate
-  DesignerMasterStyle = 3
+  DesignerMasterStyle = 0
   object tbcRest: TTabControl
     Align = Client
     Size.Width = 350.000000000000000000
@@ -30,7 +30,7 @@ object frmRest: TfrmRest
       TextSettings.Font.Size = 18.000000000000000000
       StyledSettings = [Family, Style, FontColor]
       IsSelected = False
-      Size.Width = 175.000000000000000000
+      Size.Width = 174.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
@@ -168,7 +168,7 @@ object frmRest: TfrmRest
       TextSettings.Font.Size = 18.000000000000000000
       StyledSettings = [Family, Style, FontColor]
       IsSelected = True
-      Size.Width = 175.000000000000000000
+      Size.Width = 174.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
@@ -301,9 +301,8 @@ object frmRest: TfrmRest
       Enabled = True
       ImageIndex = -1
       Position.X = 318.000000000000000000
-      Position.Y = 9.000000000000000000
       Size.Width = 32.000000000000000000
-      Size.Height = 30.000000000000000000
+      Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'cleareditbutton'
     end

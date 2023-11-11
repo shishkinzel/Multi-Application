@@ -7,6 +7,7 @@
         <DeviceId Condition="'$(Platform)'=='Android'"/>
         <DeviceId Condition="'$(Platform)'=='Android64'"/>
     </PropertyGroup>
+    <ItemGroup Condition="'$(Platform)'=='Linux64'"/>
     <ItemGroup Condition="'$(Platform)'=='Win32'">
         <DeployFile Include="Win32\Debug\RestApplication.exe" Condition="'$(Config)'=='Debug'">
             <RemoteDir>RestApplication\</RemoteDir>
