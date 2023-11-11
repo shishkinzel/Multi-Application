@@ -1,0 +1,171 @@
+inherited frmRest_LgXhdpiTb: TfrmRest_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited tbcRest: TTabControl
+    Size.Width = 480.000000000000000000
+    Size.Height = 733.000000000000000000
+    Sizes = (
+      480s
+      684s
+      480s
+      684s
+      480s
+      684s)
+    inherited tbtmTicket: TTabItem
+      Size.Width = 160.000000000000000000
+      ExplicitSize.cx = 60.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited lblTitleOne: TLabel
+        Position.X = 20.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 337.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.HorzAlign = Center
+      end
+      inherited lblOut: TLabel
+        Position.Y = 110.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited lbl2: TLabel
+        Size.Width = 202.000000000000000000
+        Size.Height = 61.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited btn1: TButton
+        Position.Y = 400.000000000000000000
+      end
+      inherited btn2: TButton
+        Position.X = 230.000000000000000000
+        Position.Y = 400.000000000000000000
+      end
+      inherited dtdt1: TDateEdit
+        Position.X = 230.000000000000000000
+        Position.Y = 110.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited dtdt2: TDateEdit
+        Position.X = 230.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited edt1: TComboEdit
+        TextSettings.Font.Size = 20.000000000000000000
+        Position.X = 230.000000000000000000
+      end
+      inherited lbl4: TLabel
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+    end
+    inherited tbtmHotell: TTabItem
+      Size.Width = 160.000000000000000000
+      ExplicitSize.cx = 81.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited dtdt3: TDateEdit
+        Position.X = 230.000000000000000000
+        Position.Y = 110.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited dtdt4: TDateEdit
+        Position.X = 230.000000000000000000
+        Position.Y = 260.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited Button1: TButton
+        Position.X = 230.000000000000000000
+        Position.Y = 400.000000000000000000
+      end
+      inherited Button2: TButton
+        Position.Y = 400.000000000000000000
+      end
+      inherited Label1: TLabel
+        Position.Y = 260.000000000000000000
+        Size.Width = 146.000000000000000000
+        Size.Height = 45.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited Label2: TLabel
+        Position.Y = 180.000000000000000000
+        Size.Width = 194.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited Label3: TLabel
+        Position.Y = 110.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited Label4: TLabel
+        Position.X = 25.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 296.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.HorzAlign = Center
+      end
+      inherited spnbx1: TSpinBox
+        Position.X = 230.000000000000000000
+        Position.Y = 180.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+    end
+    inherited tbtmTravelling: TTabItem
+      Size.Width = 160.000000000000000000
+      ExplicitSize.cx = 118.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited lblTitleTravel: TLabel
+        Position.X = 45.000000000000000000
+        Position.Y = 16.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited lblDatePay: TLabel
+        Position.Y = 110.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited dtdtDatePay: TDateEdit
+        Position.X = 230.000000000000000000
+        Position.Y = 110.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited lblQuantityDay: TLabel
+        Position.Y = 180.000000000000000000
+        Size.Width = 194.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited lbResult: TLabel
+        Position.Y = 260.000000000000000000
+        Size.Width = 170.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited dtdtResult: TDateEdit
+        Position.X = 230.000000000000000000
+        Position.Y = 260.000000000000000000
+        TextSettings.Font.Size = 20.000000000000000000
+      end
+      inherited btnRun: TButton
+        Position.Y = 400.000000000000000000
+      end
+      inherited btnCloseAll: TButton
+        Position.X = 230.000000000000000000
+        Position.Y = 400.000000000000000000
+      end
+      inherited edtQuantityDay: TComboEdit
+        TextSettings.Font.Size = 20.000000000000000000
+        Position.X = 230.000000000000000000
+        Position.Y = 180.000000000000000000
+      end
+    end
+  end
+  inherited tlbUp: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited btnClose: TSpeedButton
+      Position.X = 448.000000000000000000
+    end
+  end
+  inherited tlbDown: TToolBar
+    Position.Y = 781.000000000000000000
+    Size.Width = 480.000000000000000000
+    inherited btnPrev: TSpeedButton
+      Position.X = 432.000000000000000000
+    end
+    inherited btnNext: TSpeedButton
+      Position.X = 384.000000000000000000
+    end
+  end
+end
